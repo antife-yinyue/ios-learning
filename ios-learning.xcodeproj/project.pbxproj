@@ -12,6 +12,7 @@
 		1CA4CD3E1C91195A003FBDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4CD3C1C91195A003FBDF7 /* Main.storyboard */; };
 		1CA4CD401C91195A003FBDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4CD3F1C91195A003FBDF7 /* Assets.xcassets */; };
 		1CA4CD431C91195A003FBDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4CD411C91195A003FBDF7 /* LaunchScreen.storyboard */; };
+		1CD61FC91C9297C9006ED922 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD61FC81C9297C9006ED922 /* Dollar.framework */; };
 		1CF55EA21C91306300B76463 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF55EA11C91306300B76463 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		1CA4CD3F1C91195A003FBDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CA4CD421C91195A003FBDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CA4CD441C91195A003FBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CD61FC81C9297C9006ED922 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = Carthage/Build/iOS/Dollar.framework; sourceTree = "<group>"; };
 		1CF55EA11C91306300B76463 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -32,6 +34,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CF55EA21C91306300B76463 /* SwiftyJSON.framework in Frameworks */,
+				1CD61FC91C9297C9006ED922 /* Dollar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +44,7 @@
 		1CA4CD2C1C91195A003FBDF7 = {
 			isa = PBXGroup;
 			children = (
+				1CD61FC81C9297C9006ED922 /* Dollar.framework */,
 				1CF55EA11C91306300B76463 /* SwiftyJSON.framework */,
 				1CA4CD371C91195A003FBDF7 /* ios-learning */,
 				1CA4CD361C91195A003FBDF7 /* Products */,
@@ -159,6 +163,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Dollar.framework",
 			);
 			outputPaths = (
 			);
