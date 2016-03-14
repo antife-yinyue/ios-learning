@@ -14,6 +14,7 @@
 		1CA4CD431C91195A003FBDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CA4CD411C91195A003FBDF7 /* LaunchScreen.storyboard */; };
 		1CD61FC91C9297C9006ED922 /* Dollar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CD61FC81C9297C9006ED922 /* Dollar.framework */; };
 		1CF55EA21C91306300B76463 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF55EA11C91306300B76463 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		1CEF8B191C96816F006C5072 /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CEF8B181C96816F006C5072 /* HexColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1CA4CD441C91195A003FBDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD61FC81C9297C9006ED922 /* Dollar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Dollar.framework; path = Carthage/Build/iOS/Dollar.framework; sourceTree = "<group>"; };
 		1CF55EA11C91306300B76463 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		1CEF8B181C96816F006C5072 /* HexColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexColors.swift; path = Helpers/HexColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				1CA4CD3F1C91195A003FBDF7 /* Assets.xcassets */,
 				1CA4CD411C91195A003FBDF7 /* LaunchScreen.storyboard */,
 				1CA4CD441C91195A003FBDF7 /* Info.plist */,
+				1CEF8B181C96816F006C5072 /* HexColors.swift */,
 			);
 			path = "ios-learning";
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				1C821ACF1C91486400C1CE88 /* ViewController.swift in Sources */,
 				1CA4CD391C91195A003FBDF7 /* AppDelegate.swift in Sources */,
+				1CEF8B191C96816F006C5072 /* HexColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
