@@ -20,17 +20,17 @@ public extension UIColor {
 
         // Deal with 3 character Hex strings
         if hex.characters.count == 3 {
-            red = hex.substringToIndex(hex.startIndex.advancedBy(1))
-            green = hex.substringWithRange(Range<String.Index>(start: hex.startIndex.advancedBy(1), end: hex.startIndex.advancedBy(2)))
-            blue = hex.substringFromIndex(hex.startIndex.advancedBy(2))
+            red = (hex as NSString).substringToIndex(1)
+            green = (hex as NSString).substringWithRange(NSMakeRange(1, 1))
+            blue = (hex as NSString).substringFromIndex(2)
 
             red += red
             green += green
             blue += blue
         } else {
-            red = hex.substringToIndex(hex.startIndex.advancedBy(2))
-            green = hex.substringWithRange(Range<String.Index>(start: hex.startIndex.advancedBy(2), end: hex.startIndex.advancedBy(4)))
-            blue = hex.substringWithRange(Range<String.Index>(start: hex.startIndex.advancedBy(4), end: hex.startIndex.advancedBy(6)))
+            red = (hex as NSString).substringToIndex(2)
+            green = (hex as NSString).substringWithRange(NSMakeRange(2, 2))
+            blue = (hex as NSString).substringFromIndex(4)
         }
 
         var redInt: CUnsignedInt = 0
