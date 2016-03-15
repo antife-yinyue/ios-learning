@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C1CB0961C97BF08003B967D /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1CB0951C97BF08003B967D /* HexColors.framework */; };
+		1C1CB0981C97BF1E003B967D /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1CB0951C97BF08003B967D /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C717AA81C96E5FD0077236D /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C717AA71C96E5FD0077236D /* FontAwesome.otf */; };
 		1CB4172B1C96D49400B1C321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4172A1C96D49400B1C321 /* AppDelegate.swift */; };
 		1CB417301C96D49400B1C321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB4172E1C96D49400B1C321 /* Main.storyboard */; };
 		1CB417321C96D49400B1C321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB417311C96D49400B1C321 /* Assets.xcassets */; };
@@ -15,10 +18,24 @@
 		1CB417461C96D5F300B1C321 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB417431C96D5F300B1C321 /* HomeViewController.swift */; };
 		1CB417471C96D5F300B1C321 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB417441C96D5F300B1C321 /* LoginViewController.swift */; };
 		1CB417481C96D5F300B1C321 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB417451C96D5F300B1C321 /* WebViewController.swift */; };
-		1CB4174B1C96D60600B1C321 /* HexColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4174A1C96D60600B1C321 /* HexColors.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1C1CB0971C97BF14003B967D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C1CB0981C97BF1E003B967D /* HexColors.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C1CB0951C97BF08003B967D /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HexColors.framework; path = Carthage/Build/iOS/HexColors.framework; sourceTree = "<group>"; };
+		1C717AA71C96E5FD0077236D /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		1CB417271C96D49400B1C321 /* ios-learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB4172A1C96D49400B1C321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CB4172F1C96D49400B1C321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,7 +46,6 @@
 		1CB417431C96D5F300B1C321 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Views/HomeViewController.swift; sourceTree = "<group>"; };
 		1CB417441C96D5F300B1C321 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Views/LoginViewController.swift; sourceTree = "<group>"; };
 		1CB417451C96D5F300B1C321 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Views/WebViewController.swift; sourceTree = "<group>"; };
-		1CB4174A1C96D60600B1C321 /* HexColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HexColors.swift; path = Helpers/HexColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C1CB0961C97BF08003B967D /* HexColors.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +63,7 @@
 		1CB4171E1C96D49400B1C321 = {
 			isa = PBXGroup;
 			children = (
+				1C1CB0951C97BF08003B967D /* HexColors.framework */,
 				1CB417291C96D49400B1C321 /* ios-learning */,
 				1CB417281C96D49400B1C321 /* Products */,
 			);
@@ -66,6 +84,7 @@
 				1CB417421C96D5E500B1C321 /* Views */,
 				1CB417491C96D5F900B1C321 /* Helpers */,
 				1CB4172A1C96D49400B1C321 /* AppDelegate.swift */,
+				1C717AA71C96E5FD0077236D /* FontAwesome.otf */,
 				1CB417311C96D49400B1C321 /* Assets.xcassets */,
 				1CB4172E1C96D49400B1C321 /* Main.storyboard */,
 				1CB417331C96D49400B1C321 /* LaunchScreen.storyboard */,
@@ -103,7 +122,6 @@
 		1CB417491C96D5F900B1C321 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				1CB4174A1C96D60600B1C321 /* HexColors.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -118,6 +136,7 @@
 				1CB417231C96D49400B1C321 /* Sources */,
 				1CB417241C96D49400B1C321 /* Frameworks */,
 				1CB417251C96D49400B1C321 /* Resources */,
+				1C1CB0971C97BF14003B967D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -168,6 +187,7 @@
 			files = (
 				1CB417351C96D49400B1C321 /* LaunchScreen.storyboard in Resources */,
 				1CB417321C96D49400B1C321 /* Assets.xcassets in Resources */,
+				1C717AA81C96E5FD0077236D /* FontAwesome.otf in Resources */,
 				1CB417301C96D49400B1C321 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,7 +200,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB417471C96D5F300B1C321 /* LoginViewController.swift in Sources */,
-				1CB4174B1C96D60600B1C321 /* HexColors.swift in Sources */,
 				1CB4172B1C96D49400B1C321 /* AppDelegate.swift in Sources */,
 				1CB417411C96D5DF00B1C321 /* TabBarController.swift in Sources */,
 				1CB417481C96D5F300B1C321 /* WebViewController.swift in Sources */,
@@ -295,6 +314,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ios-learning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X.ios-learning";
@@ -306,6 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "ios-learning/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "X.ios-learning";
@@ -332,6 +359,7 @@
 				1CB4173B1C96D49400B1C321 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
