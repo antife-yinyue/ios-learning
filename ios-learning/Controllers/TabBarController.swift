@@ -14,14 +14,12 @@ class TabBarController: UITabBarController {
     UIFont.register("Assets/Fonts/FontAwesome.otf")
 
     let homeNavController = UINavigationController(rootViewController: HomeViewController())
-    //homeNavController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home-selected"))
     homeNavController.tabBarItem.title = "GitHub"
-     homeNavController.tabBarItem.image = UIImage.iconfont("\u{f09b}", familyName: "FontAwesome", size: 30)
+    homeNavController.tabBarItem.image = UIImage.iconfont("\u{f09b}", familyName: "FontAwesome", size: 30)
 
     let webviewNavController = UINavigationController(rootViewController: WebViewController())
-    //webviewNavController.tabBarItem = UITabBarItem(title: "Webview", image: UIImage(named: "Puzzle"), selectedImage: UIImage(named: "Puzzle-selected"))
-    webviewNavController.tabBarItem.title = "Webview"
-
+    webviewNavController.tabBarItem.title = "DianPing"
+    webviewNavController.tabBarItem.image = UIImage.iconfont("\u{f0f5}", familyName: "FontAwesome", size: 24)
 
     self.tabBar.tintColor = UIColor(hex: "#00a0e9")
     self.viewControllers = [homeNavController, webviewNavController]

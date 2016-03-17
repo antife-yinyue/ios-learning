@@ -1,6 +1,5 @@
 import UIKit
-import WebKit
-import Iconfont
+import MisterFusion
 
 class HomeViewController: UIViewController {
 
@@ -13,66 +12,33 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
 
+    let redView = UIView()
+    redView.backgroundColor = .redColor()
+    self.view.addLayoutSubview(redView, andConstraints:
+      redView.Top   |+| 10,
+      redView.Right |-| 10,
+      redView.Left  |+| 10
+    )
 
-    UIFont.register("Assets/Fonts/FontAwesome.otf")
+    let yellowView = UIView()
+    yellowView.backgroundColor = .yellowColor()
+    self.view.addLayoutSubview(yellowView, andConstraints:
+      yellowView.Top    |==| redView.Bottom |+| 10,
+      yellowView.Left   |+|  10,
+      yellowView.Bottom |-|  10,
+      yellowView.Height |==| redView.Height
+    )
 
-
-    let label = UILabel(frame: CGRectMake(100, 100, 100, 100))
-    label.font = UIFont(name: "FontAwesome", size: 100)
-    label.text = "\u{f09b}"
-
-    self.view.addSubview(label)
-
-
-
-    let btn = UIButton(frame: CGRectMake(100, 300, 100, 40))
-    btn.titleLabel!.font = UIFont(name: "FontAwesome", size: 40)
-    btn.setTitle("\u{f09b}", forState: .Normal)
-    btn.setTitleColor(UIColor.blackColor(), forState: .Normal)
-    btn.backgroundColor = UIColor(hex: "#eee")
-
-    self.view.addSubview(btn)
-
-
-
-    let img = UIImage.iconfont("\u{f09b}", familyName: "FontAwesome", size: 100)
-    let imgView = UIImageView()
-    imgView.image = img
-    imgView.frame = CGRectMake(100, 400, img.size.width, img.size.height)
-    imgView.backgroundColor = UIColor(hex: "#eee")
-
-//    let imgView = UIImageView(frame: CGRectMake(100, 400, 100, 100))
-//    let fontSize = min(imgView.frame.size.width, imgView.frame.size.height)
-//    imgView.image = UIImage.iconfont("\u{f09b}", familyName: "FontAwesome", size: fontSize)
-//    imgView.backgroundColor = UIColor(hex: "#eee")
-    
-    self.view.addSubview(imgView)
-
-
-
-
-
-
-    //let source = "document.body.style.paddingTop = '22px';document.body.style.backgroundColor = '#f63';"
-    //let userScript = WKUserScript(source: source, injectionTime: .AtDocumentEnd, forMainFrameOnly: false)
-
-//        let userContentController = WKUserContentController()
-//        //userContentController.addUserScript(userScript)
-//
-//        let config = WKWebViewConfiguration()
-//        config.userContentController = userContentController
-//
-//
-//
-//        let w = self.view.frame.size.width
-//        let h = self.view.frame.size.height// - 49
-//
-//        let webview = WKWebView(frame: CGRectMake(0, 0, w, h), configuration: config)
-//
-//        let url = NSURL(string: "http://m.dianping.com/")
-//        webview.loadRequest(NSURLRequest(URL: url!))
-//
-//        self.view = webview
+    let greenView = UIView()
+    greenView.backgroundColor = .greenColor()
+    self.view.addLayoutSubview(greenView, andConstraints:
+      greenView.Top    |==| redView.Bottom    |+| 10,
+      greenView.Left   |==| yellowView.Right  |+| 10,
+      greenView.Bottom |-|  10,
+      greenView.Right  |-|  10,
+      greenView.Width  |==| yellowView.Width,
+      greenView.Height |==| yellowView.Height
+    )
   }
 
   override func didReceiveMemoryWarning() {

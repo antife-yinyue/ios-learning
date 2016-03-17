@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1C1596371C9A910F0099FCED /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1596361C9A910F0099FCED /* Assets */; };
+		1C8A8D951C9B047E0065574B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8A8D941C9B047E0065574B /* TabBarController.swift */; };
+		1C8A8D971C9B06820065574B /* MisterFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8A8D961C9B06820065574B /* MisterFusion.framework */; };
+		1C8A8D981C9B068B0065574B /* MisterFusion.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C8A8D961C9B06820065574B /* MisterFusion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CA2BE0E1C9ABCC000528CAB /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */; };
 		1CA2BE0F1C9ABCC000528CAB /* Iconfont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2BE0D1C9ABCC000528CAB /* Iconfont.framework */; };
 		1CA2BE101C9ABCC900528CAB /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -16,7 +19,6 @@
 		1CB417301C96D49400B1C321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB4172E1C96D49400B1C321 /* Main.storyboard */; };
 		1CB417321C96D49400B1C321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB417311C96D49400B1C321 /* Assets.xcassets */; };
 		1CB417351C96D49400B1C321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB417331C96D49400B1C321 /* LaunchScreen.storyboard */; };
-		1CB417411C96D5DF00B1C321 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB417401C96D5DF00B1C321 /* TabBarController.swift */; };
 		1CB417461C96D5F300B1C321 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB417431C96D5F300B1C321 /* HomeViewController.swift */; };
 		1CB417471C96D5F300B1C321 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB417441C96D5F300B1C321 /* LoginViewController.swift */; };
 		1CB417481C96D5F300B1C321 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB417451C96D5F300B1C321 /* WebViewController.swift */; };
@@ -29,6 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				1C8A8D981C9B068B0065574B /* MisterFusion.framework in CopyFiles */,
 				1CA2BE101C9ABCC900528CAB /* HexColors.framework in CopyFiles */,
 				1CA2BE111C9ABCC900528CAB /* Iconfont.framework in CopyFiles */,
 			);
@@ -38,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		1C1596361C9A910F0099FCED /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		1C8A8D941C9B047E0065574B /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controllers/TabBarController.swift; sourceTree = "<group>"; };
+		1C8A8D961C9B06820065574B /* MisterFusion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MisterFusion.framework; path = Carthage/Build/iOS/MisterFusion.framework; sourceTree = "<group>"; };
 		1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HexColors.framework; path = Carthage/Build/iOS/HexColors.framework; sourceTree = "<group>"; };
 		1CA2BE0D1C9ABCC000528CAB /* Iconfont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Iconfont.framework; path = Carthage/Build/iOS/Iconfont.framework; sourceTree = "<group>"; };
 		1CB417271C96D49400B1C321 /* ios-learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,7 +51,6 @@
 		1CB417311C96D49400B1C321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CB417341C96D49400B1C321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CB417361C96D49400B1C321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CB417401C96D5DF00B1C321 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controllers/Base/TabBarController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		1CB417431C96D5F300B1C321 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Views/HomeViewController.swift; sourceTree = "<group>"; };
 		1CB417441C96D5F300B1C321 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Views/LoginViewController.swift; sourceTree = "<group>"; };
 		1CB417451C96D5F300B1C321 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Views/WebViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,7 @@
 			files = (
 				1CA2BE0E1C9ABCC000528CAB /* HexColors.framework in Frameworks */,
 				1CA2BE0F1C9ABCC000528CAB /* Iconfont.framework in Frameworks */,
+				1C8A8D971C9B06820065574B /* MisterFusion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +73,7 @@
 		1CB4171E1C96D49400B1C321 = {
 			isa = PBXGroup;
 			children = (
+				1C8A8D961C9B06820065574B /* MisterFusion.framework */,
 				1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */,
 				1CA2BE0D1C9ABCC000528CAB /* Iconfont.framework */,
 				1CB417291C96D49400B1C321 /* ios-learning */,
@@ -101,17 +107,9 @@
 		1CB4173C1C96D5A700B1C321 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1CB4173F1C96D5CD00B1C321 /* Base */,
+				1C8A8D941C9B047E0065574B /* TabBarController.swift */,
 			);
 			name = Controllers;
-			sourceTree = "<group>";
-		};
-		1CB4173F1C96D5CD00B1C321 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				1CB417401C96D5DF00B1C321 /* TabBarController.swift */,
-			);
-			name = Base;
 			sourceTree = "<group>";
 		};
 		1CB417421C96D5E500B1C321 /* Views */ = {
@@ -199,8 +197,8 @@
 			files = (
 				1CB417471C96D5F300B1C321 /* LoginViewController.swift in Sources */,
 				1CB4172B1C96D49400B1C321 /* AppDelegate.swift in Sources */,
-				1CB417411C96D5DF00B1C321 /* TabBarController.swift in Sources */,
 				1CB417481C96D5F300B1C321 /* WebViewController.swift in Sources */,
+				1C8A8D951C9B047E0065574B /* TabBarController.swift in Sources */,
 				1CB417461C96D5F300B1C321 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
