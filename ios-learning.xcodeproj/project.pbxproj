@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C1CB0961C97BF08003B967D /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1CB0951C97BF08003B967D /* HexColors.framework */; };
-		1C1CB0981C97BF1E003B967D /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1CB0951C97BF08003B967D /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C717AA81C96E5FD0077236D /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1C717AA71C96E5FD0077236D /* FontAwesome.otf */; };
+		1C1596371C9A910F0099FCED /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1596361C9A910F0099FCED /* Assets */; };
+		1CA2BE0E1C9ABCC000528CAB /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */; };
+		1CA2BE0F1C9ABCC000528CAB /* Iconfont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA2BE0D1C9ABCC000528CAB /* Iconfont.framework */; };
+		1CA2BE101C9ABCC900528CAB /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1CA2BE111C9ABCC900528CAB /* Iconfont.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1CA2BE0D1C9ABCC000528CAB /* Iconfont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1CB4172B1C96D49400B1C321 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4172A1C96D49400B1C321 /* AppDelegate.swift */; };
 		1CB417301C96D49400B1C321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CB4172E1C96D49400B1C321 /* Main.storyboard */; };
 		1CB417321C96D49400B1C321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CB417311C96D49400B1C321 /* Assets.xcassets */; };
@@ -21,28 +23,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1C1CB0971C97BF14003B967D /* CopyFiles */ = {
+		1CA2BDF51C9AACEF00528CAB /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1C1CB0981C97BF1E003B967D /* HexColors.framework in CopyFiles */,
+				1CA2BE101C9ABCC900528CAB /* HexColors.framework in CopyFiles */,
+				1CA2BE111C9ABCC900528CAB /* Iconfont.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1C1CB0951C97BF08003B967D /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HexColors.framework; path = Carthage/Build/iOS/HexColors.framework; sourceTree = "<group>"; };
-		1C717AA71C96E5FD0077236D /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		1C1596361C9A910F0099FCED /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HexColors.framework; path = Carthage/Build/iOS/HexColors.framework; sourceTree = "<group>"; };
+		1CA2BE0D1C9ABCC000528CAB /* Iconfont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Iconfont.framework; path = Carthage/Build/iOS/Iconfont.framework; sourceTree = "<group>"; };
 		1CB417271C96D49400B1C321 /* ios-learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1CB4172A1C96D49400B1C321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1CB4172A1C96D49400B1C321 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		1CB4172F1C96D49400B1C321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1CB417311C96D49400B1C321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CB417341C96D49400B1C321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CB417361C96D49400B1C321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CB417401C96D5DF00B1C321 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controllers/Base/TabBarController.swift; sourceTree = "<group>"; };
+		1CB417401C96D5DF00B1C321 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controllers/Base/TabBarController.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		1CB417431C96D5F300B1C321 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Views/HomeViewController.swift; sourceTree = "<group>"; };
 		1CB417441C96D5F300B1C321 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Views/LoginViewController.swift; sourceTree = "<group>"; };
 		1CB417451C96D5F300B1C321 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Views/WebViewController.swift; sourceTree = "<group>"; };
@@ -53,7 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1CB0961C97BF08003B967D /* HexColors.framework in Frameworks */,
+				1CA2BE0E1C9ABCC000528CAB /* HexColors.framework in Frameworks */,
+				1CA2BE0F1C9ABCC000528CAB /* Iconfont.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +68,8 @@
 		1CB4171E1C96D49400B1C321 = {
 			isa = PBXGroup;
 			children = (
-				1C1CB0951C97BF08003B967D /* HexColors.framework */,
+				1CA2BE0C1C9ABCC000528CAB /* HexColors.framework */,
+				1CA2BE0D1C9ABCC000528CAB /* Iconfont.framework */,
 				1CB417291C96D49400B1C321 /* ios-learning */,
 				1CB417281C96D49400B1C321 /* Products */,
 			);
@@ -80,11 +86,10 @@
 		1CB417291C96D49400B1C321 /* ios-learning */ = {
 			isa = PBXGroup;
 			children = (
+				1C1596361C9A910F0099FCED /* Assets */,
 				1CB4173C1C96D5A700B1C321 /* Controllers */,
 				1CB417421C96D5E500B1C321 /* Views */,
-				1CB417491C96D5F900B1C321 /* Helpers */,
 				1CB4172A1C96D49400B1C321 /* AppDelegate.swift */,
-				1C717AA71C96E5FD0077236D /* FontAwesome.otf */,
 				1CB417311C96D49400B1C321 /* Assets.xcassets */,
 				1CB4172E1C96D49400B1C321 /* Main.storyboard */,
 				1CB417331C96D49400B1C321 /* LaunchScreen.storyboard */,
@@ -119,13 +124,6 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
-		1CB417491C96D5F900B1C321 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Helpers;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -136,7 +134,7 @@
 				1CB417231C96D49400B1C321 /* Sources */,
 				1CB417241C96D49400B1C321 /* Frameworks */,
 				1CB417251C96D49400B1C321 /* Resources */,
-				1C1CB0971C97BF14003B967D /* CopyFiles */,
+				1CA2BDF51C9AACEF00528CAB /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -186,8 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CB417351C96D49400B1C321 /* LaunchScreen.storyboard in Resources */,
+				1C1596371C9A910F0099FCED /* Assets in Resources */,
 				1CB417321C96D49400B1C321 /* Assets.xcassets in Resources */,
-				1C717AA81C96E5FD0077236D /* FontAwesome.otf in Resources */,
 				1CB417301C96D49400B1C321 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
