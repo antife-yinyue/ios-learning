@@ -8,6 +8,7 @@ class WebViewController: UIViewController {
     return UIStatusBarStyle.LightContent
   }
 
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -22,7 +23,7 @@ class WebViewController: UIViewController {
 
 
     let w = self.view.frame.size.width
-    let h = self.view.frame.size.height// - 49
+    let h = self.view.frame.size.height
 
     let webview = WKWebView(frame: CGRectMake(0, 0, w, h), configuration: config)
 

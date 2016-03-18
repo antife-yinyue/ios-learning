@@ -7,6 +7,7 @@ class LoginViewController: UIViewController {
     return UIStatusBarStyle.LightContent
   }
 
+
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
