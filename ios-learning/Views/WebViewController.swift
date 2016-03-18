@@ -12,7 +12,7 @@ class WebViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    navigationController?.navigationItem.title = "大众点评"
+    //navigationController?.navigationItem.title = "大众点评"
 
     initWebview()
   }

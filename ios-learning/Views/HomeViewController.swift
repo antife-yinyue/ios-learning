@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     super.viewDidLoad()
 
     // 隐藏 Navigation Bar
-    navigationController?.navigationBarHidden = true
+    //navigationController?.navigationBarHidden = true
 
     drawLayout()
   }
