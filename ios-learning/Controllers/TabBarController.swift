@@ -17,8 +17,8 @@ class TabBarController: UITabBarController {
 
     homeViewController.tabBarItem = UITabBarItem(
       title: "Home",
-      image: UIImage.iconfont("\u{f256}", familyName: "FontAwesome", size: 26),
-      selectedImage: UIImage.iconfont("\u{f259}", familyName: "FontAwesome", size: 26)
+      image: UIImage.iconfont("\u{f070}", familyName: "FontAwesome", size: 26),
+      selectedImage: UIImage.iconfont("\u{f06e}", familyName: "FontAwesome", size: 26)
     )
 
     webViewController.tabBarItem = UITabBarItem(
