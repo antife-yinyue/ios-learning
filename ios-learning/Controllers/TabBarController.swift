@@ -10,15 +10,22 @@ class TabBarController: UITabBarController {
   }
 
   func initViewControllers() {
+    UIFont.register("Assets/Fonts/FontAwesome.otf")
+
     let homeViewController = HomeViewController()
     let webViewController = WebViewController()
 
-    homeViewController.tabBarItem.title = "GitHub"
-    webViewController.tabBarItem.title = "点评"
+    homeViewController.tabBarItem = UITabBarItem(
+      title: "Home",
+      image: UIImage.iconfont("\u{f256}", familyName: "FontAwesome", size: 26),
+      selectedImage: UIImage.iconfont("\u{f259}", familyName: "FontAwesome", size: 26)
+    )
 
-    UIFont.register("Assets/Fonts/FontAwesome.otf")
-    homeViewController.tabBarItem.image = UIImage.iconfont("\u{f09b}", familyName: "FontAwesome", size: 30)
-    webViewController.tabBarItem.image = UIImage.iconfont("\u{f0f5}", familyName: "FontAwesome", size: 24)
+    webViewController.tabBarItem = UITabBarItem(
+      title: "O2O",
+      image: UIImage.iconfont("\u{f119}", familyName: "FontAwesome", size: 26),
+      selectedImage: UIImage.iconfont("\u{f118}", familyName: "FontAwesome", size: 26)
+    )
 
     viewControllers = [homeViewController, webViewController]
     tabBar.tintColor = UIColor(hex: "#00a0e9")
