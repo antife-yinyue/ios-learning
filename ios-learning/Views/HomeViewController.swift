@@ -37,8 +37,8 @@ class HomeViewController: UIViewController {
     self.view.addLayoutSubview(yellowView, andConstraints:
       yellowView.Top    |==| redView.Bottom |+| 10,
       yellowView.Left   |+|  10,
-      yellowView.Bottom |-|  10,
-      yellowView.Height |==| redView.Height
+      yellowView.Bottom |-|  58,
+      yellowView.Height |==| redView.Height |+| 100
     )
 
     let greenView = UIView()
@@ -46,7 +46,7 @@ class HomeViewController: UIViewController {
     self.view.addLayoutSubview(greenView, andConstraints:
       greenView.Top    |==| redView.Bottom    |+| 10,
       greenView.Left   |==| yellowView.Right  |+| 10,
-      greenView.Bottom |-|  10,
+      greenView.Bottom |-|  58,
       greenView.Right  |-|  10,
       greenView.Width  |==| yellowView.Width,
       greenView.Height |==| yellowView.Height
