@@ -7,7 +7,7 @@ class HomeViewController: UIViewController {
   override func preferredStatusBarStyle() -> UIStatusBarStyle {
     return UIStatusBarStyle.LightContent
   }
-  
+
   // 隐藏状态栏
   override func prefersStatusBarHidden() -> Bool {
     return true
@@ -16,8 +16,14 @@ class HomeViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
 
+    // 隐藏 Navigation Bar
+    navigationController?.navigationBarHidden = true
+
+    drawLayout()
+  }
+
+  func drawLayout() {
     let redView = UIView()
     redView.backgroundColor = .redColor()
     self.view.addLayoutSubview(redView, andConstraints:

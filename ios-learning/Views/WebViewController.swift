@@ -11,7 +11,13 @@ class WebViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    navigationController?.navigationItem.title = "大众点评"
+
+    initWebview()
+  }
+
+  func initWebview() {
     //let source = "document.body.style.paddingTop = '22px';document.body.style.backgroundColor = '#f63';"
     //let userScript = WKUserScript(source: source, injectionTime: .AtDocumentEnd, forMainFrameOnly: false)
 
