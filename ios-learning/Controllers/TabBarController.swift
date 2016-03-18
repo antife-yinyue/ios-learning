@@ -27,7 +27,10 @@ class TabBarController: UITabBarController {
       selectedImage: UIImage.iconfont("\u{f118}", familyName: "FontAwesome", size: 26)
     )
 
-    viewControllers = [homeViewController, webViewController]
+    viewControllers = [
+      UINavigationController(rootViewController: homeViewController),
+      UINavigationController(rootViewController: webViewController)
+    ]
     tabBar.tintColor = UIColor(hex: "#00a0e9")
   }
 

@@ -10,7 +10,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
 
-    window!.rootViewController = UINavigationController(rootViewController: TabBarController())
+    let rootViewController = UINavigationController(rootViewController: TabBarController())
+
+    // 隐藏 Root Navigation Bar，方便自定义子 Controller 的 Navigation Bar
+    rootViewController.navigationBarHidden = true
+
+    window!.rootViewController = rootViewController
     window!.backgroundColor = UIColor(hex: "#fff")
 
     return true
