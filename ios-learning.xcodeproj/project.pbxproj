@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C054F8A1CA9402900B5414C /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C054F871CA9402900B5414C /* HexColors.framework */; };
+		1C054F8B1CA9402900B5414C /* Iconfont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C054F881CA9402900B5414C /* Iconfont.framework */; };
+		1C054F8C1CA9402900B5414C /* MisterFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C054F891CA9402900B5414C /* MisterFusion.framework */; };
+		1C054F8D1CA9403700B5414C /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C054F871CA9402900B5414C /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C054F8E1CA9403700B5414C /* Iconfont.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C054F881CA9402900B5414C /* Iconfont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C054F8F1CA9403700B5414C /* MisterFusion.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C054F891CA9402900B5414C /* MisterFusion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C1E3B701CA16D8900DB6C62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E3B6F1CA16D8900DB6C62 /* AppDelegate.swift */; };
 		1C1E3B751CA16D8900DB6C62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E3B731CA16D8900DB6C62 /* Main.storyboard */; };
 		1C1E3B771CA16D8900DB6C62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E3B761CA16D8900DB6C62 /* Assets.xcassets */; };
@@ -16,12 +22,6 @@
 		1C1E3B871CA16E3E00DB6C62 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E3B841CA16E3E00DB6C62 /* WebViewController.swift */; };
 		1C1E3B8A1CA16E4F00DB6C62 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C1E3B891CA16E4F00DB6C62 /* TabBarController.swift */; };
 		1C1E3B8C1CA16E5800DB6C62 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E3B8B1CA16E5800DB6C62 /* Assets */; };
-		1C1E3B901CA16EEF00DB6C62 /* HexColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1E3B8D1CA16EEF00DB6C62 /* HexColors.framework */; };
-		1C1E3B911CA16EEF00DB6C62 /* Iconfont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1E3B8E1CA16EEF00DB6C62 /* Iconfont.framework */; };
-		1C1E3B921CA16EEF00DB6C62 /* MisterFusion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C1E3B8F1CA16EEF00DB6C62 /* MisterFusion.framework */; };
-		1C1E3B941CA16F0000DB6C62 /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1E3B8D1CA16EEF00DB6C62 /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C1E3B951CA16F0000DB6C62 /* Iconfont.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1E3B8E1CA16EEF00DB6C62 /* Iconfont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C1E3B961CA16F0000DB6C62 /* MisterFusion.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1E3B8F1CA16EEF00DB6C62 /* MisterFusion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,15 +31,18 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1C1E3B941CA16F0000DB6C62 /* HexColors.framework in CopyFiles */,
-				1C1E3B951CA16F0000DB6C62 /* Iconfont.framework in CopyFiles */,
-				1C1E3B961CA16F0000DB6C62 /* MisterFusion.framework in CopyFiles */,
+				1C054F8D1CA9403700B5414C /* HexColors.framework in CopyFiles */,
+				1C054F8E1CA9403700B5414C /* Iconfont.framework in CopyFiles */,
+				1C054F8F1CA9403700B5414C /* MisterFusion.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C054F871CA9402900B5414C /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HexColors.framework; path = Carthage/Build/iOS/HexColors.framework; sourceTree = "<group>"; };
+		1C054F881CA9402900B5414C /* Iconfont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Iconfont.framework; path = Carthage/Build/iOS/Iconfont.framework; sourceTree = "<group>"; };
+		1C054F891CA9402900B5414C /* MisterFusion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MisterFusion.framework; path = Carthage/Build/iOS/MisterFusion.framework; sourceTree = "<group>"; };
 		1C1E3B6C1CA16D8900DB6C62 /* ios-learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-learning.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C1E3B6F1CA16D8900DB6C62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C1E3B741CA16D8900DB6C62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,9 +54,6 @@
 		1C1E3B841CA16E3E00DB6C62 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebViewController.swift; path = Views/WebViewController.swift; sourceTree = "<group>"; };
 		1C1E3B891CA16E4F00DB6C62 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabBarController.swift; path = Controllers/TabBarController.swift; sourceTree = "<group>"; };
 		1C1E3B8B1CA16E5800DB6C62 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
-		1C1E3B8D1CA16EEF00DB6C62 /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HexColors.framework; path = Carthage/Build/iOS/HexColors.framework; sourceTree = "<group>"; };
-		1C1E3B8E1CA16EEF00DB6C62 /* Iconfont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Iconfont.framework; path = Carthage/Build/iOS/Iconfont.framework; sourceTree = "<group>"; };
-		1C1E3B8F1CA16EEF00DB6C62 /* MisterFusion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MisterFusion.framework; path = Carthage/Build/iOS/MisterFusion.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,9 +61,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C1E3B901CA16EEF00DB6C62 /* HexColors.framework in Frameworks */,
-				1C1E3B911CA16EEF00DB6C62 /* Iconfont.framework in Frameworks */,
-				1C1E3B921CA16EEF00DB6C62 /* MisterFusion.framework in Frameworks */,
+				1C054F8A1CA9402900B5414C /* HexColors.framework in Frameworks */,
+				1C054F8B1CA9402900B5414C /* Iconfont.framework in Frameworks */,
+				1C054F8C1CA9402900B5414C /* MisterFusion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +73,9 @@
 		1C1E3B631CA16D8900DB6C62 = {
 			isa = PBXGroup;
 			children = (
-				1C1E3B8D1CA16EEF00DB6C62 /* HexColors.framework */,
-				1C1E3B8E1CA16EEF00DB6C62 /* Iconfont.framework */,
-				1C1E3B8F1CA16EEF00DB6C62 /* MisterFusion.framework */,
+				1C054F871CA9402900B5414C /* HexColors.framework */,
+				1C054F881CA9402900B5414C /* Iconfont.framework */,
+				1C054F891CA9402900B5414C /* MisterFusion.framework */,
 				1C1E3B6E1CA16D8900DB6C62 /* ios-learning */,
 				1C1E3B6D1CA16D8900DB6C62 /* Products */,
 			);
