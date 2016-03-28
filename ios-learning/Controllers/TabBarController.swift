@@ -22,7 +22,7 @@ class TabBarController: UITabBarController {
     )
 
     webViewController.tabBarItem = UITabBarItem(
-      title: "O2O",
+      title: "Webview",
       image: UIImage.iconfont("\u{f119}", familyName: "FontAwesome", size: 26),
       selectedImage: UIImage.iconfont("\u{f118}", familyName: "FontAwesome", size: 26)
     )

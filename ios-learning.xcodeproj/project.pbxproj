@@ -22,7 +22,6 @@
 		1C1E3B941CA16F0000DB6C62 /* HexColors.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1E3B8D1CA16EEF00DB6C62 /* HexColors.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C1E3B951CA16F0000DB6C62 /* Iconfont.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1E3B8E1CA16EEF00DB6C62 /* Iconfont.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1C1E3B961CA16F0000DB6C62 /* MisterFusion.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1C1E3B8F1CA16EEF00DB6C62 /* MisterFusion.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1C1E3B9A1CA1702F00DB6C62 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C1E3B991CA1702F00DB6C62 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,7 +54,6 @@
 		1C1E3B8D1CA16EEF00DB6C62 /* HexColors.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HexColors.framework; path = Carthage/Build/iOS/HexColors.framework; sourceTree = "<group>"; };
 		1C1E3B8E1CA16EEF00DB6C62 /* Iconfont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Iconfont.framework; path = Carthage/Build/iOS/Iconfont.framework; sourceTree = "<group>"; };
 		1C1E3B8F1CA16EEF00DB6C62 /* MisterFusion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MisterFusion.framework; path = Carthage/Build/iOS/MisterFusion.framework; sourceTree = "<group>"; };
-		1C1E3B991CA1702F00DB6C62 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +73,6 @@
 		1C1E3B631CA16D8900DB6C62 = {
 			isa = PBXGroup;
 			children = (
-				1C1E3B991CA1702F00DB6C62 /* Default-568h@2x.png */,
 				1C1E3B8D1CA16EEF00DB6C62 /* HexColors.framework */,
 				1C1E3B8E1CA16EEF00DB6C62 /* Iconfont.framework */,
 				1C1E3B8F1CA16EEF00DB6C62 /* MisterFusion.framework */,
@@ -187,7 +184,6 @@
 				1C1E3B7A1CA16D8900DB6C62 /* LaunchScreen.storyboard in Resources */,
 				1C1E3B8C1CA16E5800DB6C62 /* Assets in Resources */,
 				1C1E3B771CA16D8900DB6C62 /* Assets.xcassets in Resources */,
-				1C1E3B9A1CA1702F00DB6C62 /* Default-568h@2x.png in Resources */,
 				1C1E3B751CA16D8900DB6C62 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

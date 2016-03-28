@@ -1,4 +1,5 @@
 import UIKit
+import MisterFusion
 
 class LoginViewController: UIViewController {
 
@@ -15,7 +16,38 @@ class LoginViewController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+
+    drawLayout()
+  }
+
+  func drawLayout() {
+    let redView = UIView()
+    redView.backgroundColor = .redColor()
+    self.view.addLayoutSubview(redView, andConstraints:
+      redView.Top   |+| 10,
+      redView.Right |-| 10,
+      redView.Left  |+| 10
+    )
+
+    let yellowView = UIView()
+    yellowView.backgroundColor = .yellowColor()
+    self.view.addLayoutSubview(yellowView, andConstraints:
+      yellowView.Top    |==| redView.Bottom |+| 10,
+      yellowView.Left   |+|  10,
+      yellowView.Bottom |-|  58,
+      yellowView.Height |==| redView.Height |+| 100
+    )
+
+    let greenView = UIView()
+    greenView.backgroundColor = .greenColor()
+    self.view.addLayoutSubview(greenView, andConstraints:
+      greenView.Top    |==| redView.Bottom    |+| 10,
+      greenView.Left   |==| yellowView.Right  |+| 10,
+      greenView.Bottom |-|  58,
+      greenView.Right  |-|  10,
+      greenView.Width  |==| yellowView.Width,
+      greenView.Height |==| yellowView.Height
+    )
   }
 
   override func didReceiveMemoryWarning() {

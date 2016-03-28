@@ -1,7 +1,7 @@
 import UIKit
 import WebKit
 
-class WebViewController: UIViewController {
+class WebViewController: UIViewController, WKScriptMessageHandler {
 
   // 设置顶部状态栏颜色
   override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -13,36 +13,39 @@ class WebViewController: UIViewController {
     super.viewDidLoad()
 
     // 设置 Title
-    navigationItem.title = "大众点评"
+    //navigationItem.title = "淘宝"
+
+    // 隐藏 Navigation Bar
+    navigationController!.navigationBarHidden = true
 
     initWebview()
   }
 
   func initWebview() {
-    //let source = "document.body.style.paddingTop = '22px';document.body.style.backgroundColor = '#f63';"
-    //let userScript = WKUserScript(source: source, injectionTime: .AtDocumentEnd, forMainFrameOnly: false)
+    let fileURL = NSBundle.mainBundle().URLForResource("bridge", withExtension: "js", subdirectory: "Assets")!
+    let data = NSData(contentsOfURL: fileURL)!
+    let source = NSString(data: data, encoding: NSUTF8StringEncoding)
+    let userScript = WKUserScript(source: source as! String, injectionTime: .AtDocumentEnd, forMainFrameOnly: false)
 
     let userContentController = WKUserContentController()
-    //userContentController.addUserScript(userScript)
+    userContentController.addUserScript(userScript)
+    userContentController.addScriptMessageHandler(self, name: "callbackHandler")
 
     let config = WKWebViewConfiguration()
     config.userContentController = userContentController
 
+    let webview = WKWebView(frame: self.view.bounds, configuration: config)
+    let url = NSURL(string: "https://m.taobao.com/")
 
-    let w = self.view.frame.size.width
-    let h = self.view.frame.size.height
-
-    let webview = WKWebView(frame: CGRectMake(0, 0, w, h), configuration: config)
-
-    let url = NSURL(string: "http://m.dianping.com/")
     webview.loadRequest(NSURLRequest(URL: url!))
 
     self.view = webview
   }
 
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
+  func userContentController(userContentController: WKUserContentController, didReceiveScriptMessage message: WKScriptMessage) {
+    if (message.name == "callbackHandler") {
+      print(message.body)
+    }
   }
 
 }
